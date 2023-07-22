@@ -1,0 +1,100 @@
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({ Name = "Fire Hub🔥🤑 | Script V2.6", HidePremium = false, SaveConfig = true,
+  ConfigFolder = "OrionTest" })
+
+local TradeScamTab = Window:MakeTab({
+  Name = "TradeScam",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+TradeScamTab:AddButton({
+  Name = "Trade Lag",
+  Callback = function()
+    print("button pressed")
+  end
+})
+
+TradeScamTab:AddToggle({
+  Name = "On",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+TradeScamTab:AddToggle({
+  Name = "Off",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+TradeScamTab:AddButton({
+  Name = "Crash Server",
+  Callback = function()
+    print("button pressed")
+  end
+})
+
+local DupeTab = Window:MakeTab({
+  Name = "Dupe",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+DupeTab:AddButton({
+  Name = "Dupe pets",
+  Callback = function()
+    print("button pressed")
+  end
+})
+
+DupeTab:AddToggle({
+  Name = "On",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+DupeTab:AddToggle({
+  Name = "Off",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+local ControlPanelTab = Window:MakeTab({
+  Name = "Control Panel",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Anti-Cheat Bypass",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Anti-Lag",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Auto Leave when Admin Join",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
